@@ -1,0 +1,4 @@
+iPhone,1000
+Samsung,800
+Xiaomi,500
+MacBook,1500
