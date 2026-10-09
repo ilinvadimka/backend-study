@@ -55,7 +55,7 @@ users = [
     {"name": "Sam", "age": 16},
 ]
 def get_adults(users):
-    my_list = [] #мне тут чутка ии помогла сказав создать копилку и все больше она мне не помогла, а спрашивал у него потому что у меня нормально возврощатся нормально не может и только Alex и я по разному пробовал и не выходило такуж я туту не знаю сам ли сделал или ии 
+    my_list = []
     for user in users:
         if user["age"] >= 18:
             my_list.append(user["name"])
@@ -91,11 +91,9 @@ def find_expensive_products(products, price):
     for user in products:
         if user["price"] >= price:
             my_list.append(user["name"])
-    return my_list#писал сам полностью долго думал ,где то минут 40 и потом начал чувствовать алгоритм и заметил ,когда почти доделал что это слияние из 2 последних решений
-result = find_expensive_products(products, 900) 
+    return my_list
 print(result) 
-"""
-"""
+
 #🔹 №11 — функция с двумя параметрами
 def multiply(a, b):
     return a * b
@@ -195,7 +193,7 @@ def get_adults(users):
     for user in users:
         if is_adult(user["age"]):
             my_list.append(user["name"])
-    return my_list #я тут дого сидел и обратился к ии и он присерно сказал как делать в строчке с if а именно is_adult(user["age"]): что записывать внутри is_adult а именно вот это user["age"] и после этого как я исправил код начал работать а так я все остальное сам написал структуру ,идею  и делал ,но как должно не знал и что так можно и надо делать где if 
+    return my_list
 print(get_adults(users)) 
 
 #🧠 №20 — общая стоимость товаров
