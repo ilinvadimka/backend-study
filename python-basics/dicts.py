@@ -186,9 +186,6 @@ for user in users:
             citis[city] += 1
         else:
             citis[city] = 1
-                                    #сидел над заданием минут 40 но все рвно не смог сам его решить и не хватало 
-                                    #for user in users:
-                                    #    citis[user["city"]] = 0 а остольоне я написал сам
 for city in citis:
     print(city, citis[city])
 
@@ -204,7 +201,6 @@ ages = {}
 
 for user in users:
     ages[user["age"]] = 0
-                                #полностью сам написал заняло 30 минут, но никуда не смотел ,кроме кода
 for user in users:
     oldest = user["age"]
     if user["age"] < oldest:
@@ -224,7 +220,7 @@ for user in products:
     choice = user["name"]
     if choice == names:
         print(choice,user["price"])
-else:                               #написал сам ,о не мог ничего поделать с выводом ,у меня выходило что нужно ,но и с ним и выходил товара не найден 4 раза или 1 раз, и я спросил ии и оказывается else можно применять к for и после того как я узнал поставил и стало все правильно 
+else:                         
     print("Товар не найден")
 #Задание 19 — изменение данных
 user = {
@@ -235,7 +231,7 @@ user = {
 new_city = input("Введите новый город: ")
 
 user["city"] = new_city
-print(user)     #за минуту решил ,изи
+print(user)  
 
 #🔥Задание 20 — финальное
 users = [
@@ -259,7 +255,6 @@ for user in users:
             citys[city] += 1
         else:
             citys[city] = 1
-                                #писал сам , но чуть подсматривал в задание 16 , ф они вообще чем то отличаются?
 for city in citys:
     print(city, citys[city])
 
@@ -280,11 +275,9 @@ for user in users:
     if user["age"] > max_value:
             max_value = user["age"]
             max_user = user
-                                        #Написал сам за час без ии , просто гуглил сидел больше часа ,сам думал , вникал я прям ощутил это, что она работает нормально
 for key, value in max_user.items():
     print(value, end=" ")
-print() # этот принт мне подзказал ии ,потому что у меня вывод выходил с %, а что выше я написал сам честно заявляю только гуглил, нк там ии от гула автоматическая выходила , но код он не давал ,я его сам просил не давать, так уж могу гордо могу заявить что сам написал
-
+print() 
 #№22 — самый дешёвый товар
 products = [
     {"name": "Laptop", "price": 1200},
@@ -304,7 +297,7 @@ for user in products:
 
 for key, value in min_user.items():
     print(value, end=" ")
-print()    #решил за минут 15 решал сам, но подсматривал с прошлого задания , потому что они по факту одинаковые ,но просто нооборот
+print()   
 
 #№23 — контрольная
 products = [
@@ -321,5 +314,4 @@ for user in products:
     if user["price"]* user["quantity"]  >  max_value:
         max_value = user["price"] * user["quantity"]
         max_name  = user["name"]
-
-print(max_name, max_value) #написал сам много гугл и заняло почти час посматривал пошлые задание но там пришлось все таки думать ну я додумал
+print(max_name, max_value)
