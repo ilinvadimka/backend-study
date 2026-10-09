@@ -61,7 +61,7 @@ def get_user_age(filename, name):
             for user in users:
                 parts = user.split(",")
                 age = int(parts[1])
-                names = parts[0] # parts[0] только это подскозал ии и все 
+                names = parts[0]
                 if name == names:
                     return age
             else:
