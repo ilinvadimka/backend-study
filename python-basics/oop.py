@@ -104,4 +104,3 @@ product2 = Product('iPad',1000,4)
 product3 = Product('iPhone',500,12) #в целом трудностей не было , но когда я попытался чложить общую сумму что то не получалочь пришлось подумать и я смог написать сам ,догадатся и получилось
 
 print(product1.get_total()+product2.get_total()+product3.get_total())
-
