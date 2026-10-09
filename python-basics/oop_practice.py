@@ -31,3 +31,21 @@ total = 0
 for all in products:
     total += all.get_total()
 print(total)
+
+#Задача №2 — атрибуты экземпляра и класса
+class Employee:
+    def __init__(self,name,salary):
+        self.name = name
+        self.salary = salary
+        self.company = "TechCorp"
+
+employees = [
+    Employee('Vadim',103900),
+    Employee('Roma',112654), 
+    Employee('Dima',151000),
+]
+
+for employee in employees:
+    company = "NewTech"
+    employee.company = company
+    print(employee.name,employee.salary,employee.company)
