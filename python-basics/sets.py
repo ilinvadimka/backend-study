@@ -20,7 +20,7 @@ print(names)
 #№6 — удалить элемент
 names = {"Alex", "John", "Mike", "Sam"}
 names.remove("Mike")
-names.discard("Mike") #так и не понял чем отличаются
+names.discard("Mike")
 print(names)
 #№7 — проверка наличия
 users = {"Alex", "John", "Mike", "Sam"}
