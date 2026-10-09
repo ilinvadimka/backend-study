@@ -6,7 +6,7 @@ users = [
     {"name": "Sam", "city": "London"},
     {"name": "Bob", "city": "Amsterdam"},
 ]
-cityse = set(user["city"] for user in users) #вот cityse мне помог ии , но я дого сидел и писал cityse = set(users["city"] сам но все равно выдавало ошибки ,но оказывается там вообще через цикл надо я бы до этого бы не додумался как это бы сдеалть
+cityse = set(user["city"] for user in users)
 for items in cityse:
     print(items)
 
@@ -37,7 +37,6 @@ cityse = set(user["city"] for user in users)
 
 if town not in cityse:
     print("Пользователи не найдены")
-#в целом я сам написал этот код, но каждый раз с правильным ответом, выходил Пользователи не найдены , я над этим заданием долго сидел по разному пробовал но у меня не выходило и я спросилл у ии и он помог мне, сказав сделать нооборот ,то есть сперва работать с если Эпользователя не найдно", а потом искать челов
 else:
     for user in users:
         if town == user["city"]:
@@ -120,7 +119,7 @@ citys = set()
 for user in users:
     if user["age"] >= 18:
         citys.add(user["city"])
-for i in citys:    # долго сидел но сам без ии , много думал сидел менял структур и гуглин но все таки смог решить и понял
+for i in citys: 
     print(i)
 
 #🔥 №10 — большая контрольная
@@ -132,4 +131,4 @@ users = [
 ]
 for user in users:
     if "Python" in user["skills"]:
-        print(user["name"]) # это задание заняло у меня меньше 5 минут очень легкое
+        print(user["name"])
