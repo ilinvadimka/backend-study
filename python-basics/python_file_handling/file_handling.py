@@ -10,12 +10,12 @@ file.close()
 #🟢 №3 — добавить информацию
 file = open("hello.txt","a")
 file.write("\nI want to become a backend developer.")
-file.close()#на этом задании много гуглил
+file.close()
 file = open("hello.txt","r")
 print(file.read())
 file.close()
 #🟡 №4 — with open
-with open("hello.txt","r") as file:#не понял почуму не работало загуглил понял что при with open нужен в конце as file:
+with open("hello.txt","r") as file:
     print(file.read())
 #🟡 №5 — строки из файла
 users = open('users.txt','w')
@@ -25,18 +25,18 @@ Mike
 Sam""")
 with open('users.txt','r') as users:
     for user in users:
-        print(user.strip())# на этом заднии много гуглил и спрашивал
+        print(user.strip())
 #🟡 №6 — посчитать пользователей
 with open("users.txt","r") as users:
     count = 0
     for user in users:
         count +=1
-    print(count) #написал сам
+    print(count) 
 #🟡 №7 — найти пользователя
 def find_user(filename, name):
     with open('users.txt','r') as users:
         for user in users:
-            if name == user.strip(): #написал сам но тольео из за .strip() не было правильно
+            if name == user.strip(): 
                 return True
         else:
             return False
@@ -53,9 +53,9 @@ Sam,16""")
         adults = []
         for user in users:
             parts = user.split(",")
-            age = int(parts[1]) #скажу честно ,тут мне помог ии а имнно age = int(parts[1])
+            age = int(parts[1])
             if age >= 18:
-                adults.append(parts[0].strip()) # и тут тоже момог parts[0]с этим и даже не знаю вроде основу я сам написал но если бы не ии то она бы вообще не работало бы
+                adults.append(parts[0].strip())
         return (adults)
 print(get_adults("users.txt"))
 #🔥 №9 — запись результатов
@@ -75,7 +75,7 @@ Sam,16""")
 
     with open('adults.txt','w') as out:
         for user in adults:
-            out.write(user) #написал сам но ии cкfзал мне что я     return adults не туда вставил и что код может сломатся и я сам исправил это и замтил что нужно еще         for user in adults:
+            out.write(user)
     return adults
 print(*save_adults("users.txt",'adults.txt'))
 #🧠 №10 — контрольная
@@ -92,7 +92,7 @@ MacBook,1500""")
             price = int(parts[1])
             if price >= min_price:
                 list_products.append(parts[0].strip())
-        return list_products #это задание написал сам полностью
+        return list_products 
 print(get_expensive_products("products.txt", 900))     
 
 #Задание 1. Записать в файл
