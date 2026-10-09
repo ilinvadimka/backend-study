@@ -65,9 +65,7 @@ class BankAccount:
         return self.balance
 
 user = BankAccount("Vadim",1000)
-print(user.deposit(500))  #написал сам это задание ,придя после пар ,просто написал и с 1 раза решил правильно никуда не смотря  
-print(user.withdraw(300))
-
+print(user.deposit(500)) 
 #№6 — логика внутри класса 🔥
 class BankAccount:
     def __init__(self,owner,balance):
@@ -87,7 +85,7 @@ class BankAccount:
         return self.balance
 
 user = BankAccount("Vadim",500)
-print(user.deposit(100)) #тоже написал сам вообще не смотря на посказки и тд
+print(user.deposit(100))
 print(user.withdraw(700))
 #№7 — финальная на сегодня 🧠
 class Product:
@@ -101,6 +99,6 @@ class Product:
 
 product1 = Product('MacBook', 1500, 2)
 product2 = Product('iPad',1000,4)
-product3 = Product('iPhone',500,12) #в целом трудностей не было , но когда я попытался чложить общую сумму что то не получалочь пришлось подумать и я смог написать сам ,догадатся и получилось
+product3 = Product('iPhone',500,12)
 
 print(product1.get_total()+product2.get_total()+product3.get_total())
