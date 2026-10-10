@@ -41,7 +41,7 @@ class Employee:
 
 employees = [
     Employee('Vadim',103900),
-    Employee('Roma',112654), 
+    Employee('Roma',112654), #тут я у ии спросил че она у меня не правильная каждый раз , а оказывается 
     Employee('Dima',151000),
 ]
 
@@ -49,3 +49,19 @@ for employee in employees:
     company = "NewTech"
     employee.company = company
     print(employee.name,employee.salary,employee.company)
+#Задача №3 — метод __str__
+class Book:
+    def __init__ (self,title,author,pages):
+        self.title = title
+        self.author = author
+        self.pages =pages
+    def __str__ (self):
+        return(f"Книга: {self.title}, автор: {self.author}, страниц: {self.pages}")
+
+book1 = Book('Python для начинающих','Иван',350)
+book2 = Book('Python для продвинутых','Ваня',420)
+book3 = Book('С++ для новичков','Алексей',380)
+
+print(book1)
+print(book2)
+print(book3)
