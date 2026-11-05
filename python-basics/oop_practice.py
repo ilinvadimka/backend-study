@@ -11,7 +11,7 @@ class Product:
         self.quantity += amount
         return self.quantity 
 
-products = [#тут я спросил у ии как такие списки делать и как работают, но не брал готовое в тольео смотрел по похожуму который он показал 
+products = [
     Product('iPhone', 799, 24),
     Product('MacBook', 1299, 6),
     Product('iPad', 449, 12),
@@ -41,7 +41,7 @@ class Employee:
 
 employees = [
     Employee('Vadim',103900),
-    Employee('Roma',112654), #тут я у ии спросил че она у меня не правильная каждый раз , а оказывается 
+    Employee('Roma',112654), 
     Employee('Dima',151000),
 ]
 
@@ -65,3 +65,61 @@ book3 = Book('С++ для новичков','Алексей',380)
 print(book1)
 print(book2)
 print(book3)
+#Задача №4 — инкапсуляция
+class BankAccount:
+    def __init__(self,owner,balance):
+        self.owner = owner
+        self.__balance = balance
+
+    def deposit(self,amount):
+        if amount > 0:
+            self.__balance += amount
+        return self.__balance
+    def withdraw(self,amount):
+        if amount > 0 and amount <= self.__balance:
+            self.__balance -= amount
+        return self.__balance
+    def get_balance(self):
+        return self.__balance 
+
+user = BankAccount('Vadim',1000)
+
+print(user.deposit(200))
+print(user.withdraw(500))
+
+#Задача №5 — наследование
+class Animal:
+    def __init__(self,name):
+        self.name = name
+    def speak(self):
+        return "Животное издает звук"
+
+class Dog(Animal):
+    def speak(self):
+        return "Гав"
+class Cat(Animal):
+    def speak(self):
+        return "Мяу"
+
+my_dog = Dog("Шарик")
+my_cat = Cat("Мурка")
+print(f"{my_dog.name} говорит: {my_dog.speak()}")
+print(f"{my_cat.name} говорит: {my_cat.speak()}")
+
+#Задача №6 — super() и полиморфизм
+class Animal:
+    def __init__(self,name):
+        self.name = name
+    def speak(self):
+        return "Животное издает звук"
+
+class Dog(Animal):
+    def speak(self):
+        return "Гав"
+class Cat(Animal):
+    def speak(self):
+        return "Мяу"
+
+my_cat = Cat("Мурка")
+print(f"{my_dog.name} говорит: {my_dog.speak()}")
+print(f"{my_cat.name} говорит: {my_cat.speak()}")
